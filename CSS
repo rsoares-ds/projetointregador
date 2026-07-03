@@ -1,0 +1,198 @@
+/* Configurações Gerais - Azul Escuro */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0a1128; /* Fundo bem escuro */
+    color: #e0e6ed;
+    padding-top: 70px;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: #1a2238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #00f2fe; /* Azul neon */
+}
+
+.nav-logo {
+    color: #00f2fe;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #e0e6ed;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: #00f2fe;
+    font-weight: bold;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #00f2fe;
+    margin-bottom: 0.5rem;
+}
+
+/* Grade de Cards */
+.grid-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Estilo dos Cards */
+.card-painel {
+    background-color: #1a2238;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+.card-painel h2 {
+    color: #00f2fe;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card-painel p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: #b0bec5;
+}
+
+/* LEDs Centralizados */
+.leds-alinhados {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.led-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.2; /* Começa apagado */
+    transition: opacity 0.3s;
+}
+
+.led-circulo {
+    width: 30px;
+    height: 45px;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+/* Cores e Brilho */
+.vermelho { background-color: #ff1744; box-shadow: 0 0 15px #ff1744; }
+.verde { background-color: #00e676; box-shadow: 0 0 15px #00e676; }
+
+/* Classe para acender */
+.led-aceso {
+    opacity: 1 !important;
+}
+
+.led-nome {
+    color: #b0bec5;
+    font-size: 0.8rem;
+}
+
+/* Lista de Status */
+.status-lista {
+    background-color: #0a1128;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.status-item {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Botão Interativo */
+.btn-interativo {
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: #0a1128;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-interativo:hover {
+    transform: scale(1.05);
+}
+
+/* Lista de Benefícios */
+.lista-checks {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #b0bec5;
+}
+
+.lista-checks li {
+    margin-bottom: 0.7rem;
+}
+
+/* Caixas para Imagens */
+.caixa-imagem {
+    background-color: #0a1128;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #334155;
+    font-size: 0.8rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #334155;
+    border-top: 1px solid #334155;
+}
+
+/* Responsividade (Celular) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
