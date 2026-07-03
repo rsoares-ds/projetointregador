@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho Tech | Semáforo de Umidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">Agrinho Tech 🌾</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Início</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
+        <p>Monitoramento de Solo com Semáforo Inteligente</p>
+    </header>
+
+    <main class="grid-container">
+        
+        <section class="card-painel">
+            <h2>O Desafio</h2>
+            <p>Usar a tecnologia para monitorar o solo e evitar o desperdício de água.</p>
+            <div class="caixa-imagem">📸 [Imagem: Campo Monitorado]</div>
+        </section>
+
+        <section class="card-painel central">
+            <h2>Semáforo de Duas Cores</h2>
+            
+            <div class="leds-alinhados">
+                <div class="led-bloco" id="bloco-vermelho">
+                    <span class="led-circulo vermelho"></span>
+                    <span class="led-nome">Seco</span>
+                </div>
+                <div class="led-bloco" id="bloco-verde">
+                    <span class="led-circulo verde"></span>
+                    <span class="led-nome">Ideal</span>
+                </div>
+            </div>
+
+            <div class="status-lista">
+                <div class="status-item">🔴 <strong>Solo Seco:</strong> Irrigar!</div>
+                <div class="status-item">🟢 <strong>Umidade Ideal:</strong> Não irrigar.</div>
+            </div>
+
+            <button id="btn-simular" class="btn-interativo">Simular Leitura do Solo</button>
+        </section>
+
+        <section class="card-painel">
+            <h2>Benefícios</h2>
+            <ul class="lista-checks">
+                <li>✓ Economia de Água</li>
+                <li>✓ Proteção do Solo</li>
+                <li>✓ Sustentabilidade</li>
+            </ul>
+            <div class="caixa-imagem">📸 [Imagem: Irrigação Eficiente]</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Trabalho Agrinho - 2026</p>
+    </footer>
+
+    <script>
+        const blocoVermelho = document.getElementById('bloco-vermelho');
+        const blocoVerde = document.getElementById('bloco-verde');
+        const botaoSimular = document.getElementById('btn-simular');
+
+        const estados = ['seco', 'ideal'];
+        let indiceAtual = 0;
+
+        function simularLeituraSolo() {
+            blocoVermelho.classList.remove('led-aceso');
+            blocoVerde.classList.remove('led-aceso');
+
+            const estadoAtual = estados[indiceAtual];
+
+            if (estadoAtual === 'seco') {
+                blocoVermelho.classList.add('led-aceso');
+                botaoSimular.innerText = "Simular Solo: Seco (🔴)";
+            } else if (estadoAtual === 'ideal') {
+                blocoVerde.classList.add('led-aceso');
+                botaoSimular.innerText = "Simular Solo: Ideal (🟢)";
+            }
+            indiceAtual = (indiceAtual + 1) % estados.length;
+        }
+
+        botaoSimular.addEventListener('click', simularLeituraSolo);
+        blocoVerde.classList.add('led-aceso');
+    </script>
+</body>
+</html>
