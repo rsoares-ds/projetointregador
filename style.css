@@ -7,7 +7,7 @@
 
 body {
   background-color: #0d141e;
-  color: ##fff
+  color: ##fffff
 padding: 40px 20px;
 }
 
@@ -25,7 +25,7 @@ padding: 40px 20px;
 
 .header h1 {
   font-size: 1.6rem;
-  color: #e2e8f0;
+  color: #white;
 }
 
 .header h1 span {
