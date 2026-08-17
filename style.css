@@ -17,7 +17,6 @@ padding: 40px 20px;
 }
 
 .header .subititle {
-  color:#10b981;
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 8px
@@ -25,11 +24,10 @@ padding: 40px 20px;
 
 .header h1 {
   font-size: 1.6rem;
-  color: #10b981;
 }
 
 .header h1 span {
-  color: #10b981;
+  font-weight: 400;
 }
 
 .container {
@@ -62,12 +60,11 @@ padding: 40px 20px;
   margin-bottom: 20px;
 }
 
-.cyan { color: #38bdf8; }
-.green-text { color: #34d399; }
-
-/* Status do Semáforo */
+/* Status do Semáforo com fundo sutil e texto branco /*
 .status-list {
   margin: 15px 0;
 }
 
-.status-item
+.status-item {
+  margin-bottom; 12px;
+  
