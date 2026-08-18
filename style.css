@@ -66,5 +66,14 @@ padding: 40px 20px;
   color:#ffffff
 }
 
+/* Força todo o texto do cartão do Disco de Newton a ficar branco /*
+.disco-card,
+.disco-card h2,
+.disco-card p,
+.disco-card ul,
+.disco-card li {
+  color: #ffffff !important;
+}
+
 
   
