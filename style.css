@@ -74,6 +74,22 @@ padding: 40px 20px;
 .disco-card li {
   color: #ffffff !important;
 }
+/* Centraliza a div que segura a imagem/*
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  margin-top: 15px;
+}
 
+/* Garante que a imagem fique centralizada e ajustada/*
+.card-image {
+  max-with: 100%; 
+  height: auto;
+  diplay: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
 
   
