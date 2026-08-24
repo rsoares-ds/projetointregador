@@ -50,7 +50,10 @@ padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+}🌈 Cores do espectro (RGB / Arco-íris)
+⚡ Ilusão de ótica e persistência retiniana
+💡 Síntese aditiva da luz branca
+Experimento do Disco de Newton na sala de aula
 
 .card h2 {
   font-size: 1.3rem;
@@ -91,5 +94,8 @@ padding: 40px 20px;
   margin: 0 auto;
   border-radius: 12px;
 }
-
+/* Força as listas do cartão a ficarem com texto branco/* 
+.disco-car li {
+  color: #ffffff !important;
+}
   
