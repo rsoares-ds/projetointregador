@@ -69,33 +69,6 @@ Experimento do Disco de Newton na sala de aula
   color:#ffffff
 }
 
-/* Força todo o texto do cartão do Disco de Newton a ficar branco /*
-.disco-card,
-.disco-card h2,
-.disco-card p,
-.disco-card ul,
-.disco-card li {
-  color: #ffffff !important;
+.texto-branco li {
+  color: #ffffff !important; 
 }
-/* Centraliza a div que segura a imagem/*
-.card-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  margin-top: 15px;
-}
-
-/* Garante que a imagem fique centralizada e ajustada/*
-.card-image {
-  max-with: 100%; 
-  height: auto;
-  diplay: block;
-  margin: 0 auto;
-  border-radius: 12px;
-}
-/* Força as listas do cartão a ficarem com texto branco/* 
-.disco-car li {
-  color: #ffffff !important;
-}
-  
