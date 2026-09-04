@@ -120,3 +120,27 @@ Experimento do Disco de Newton na sala de aula
 .texto-branco {
   color: #ffffff !important;
 }
+
+.disco-card {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.disco-card h2,
+.disco-card p,
+.disco-card ul,
+.disco-card li {
+  text-align: center !important;
+  width: 100%;
+}
+.disco-card .benefits {
+  list-style: none !importan;
+  padding: 0 !important;
+  margin: 15px 0 !important;
+}
+.disco-card .benefits li {
+  margin-bottom: 8px;
+}
+
