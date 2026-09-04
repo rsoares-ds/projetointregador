@@ -182,4 +182,17 @@ Experimento do Disco de Newton na sala de aula
   list-style: none !important;
   padding: 0 !important;
 }
-  
+  .imagem-centralizada {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+  }
+.imagem-centralizada img {
+  dispaly: block !important;
+  margin: 0 auto !important; 
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px; 
+}
