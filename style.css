@@ -115,3 +115,8 @@ Experimento do Disco de Newton na sala de aula
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+.disco-card h2,
+.texto-branco {
+  color: #ffffff !important;
+}
