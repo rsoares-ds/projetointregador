@@ -199,3 +199,9 @@ Experimento do Disco de Newton na sala de aula
   height: auto !important;
   border-radius: 8px; 
 }
+
+.disco-card ul.benefits,
+.disco-card ul.benefits li {
+  color: #ffffff !important;
+  text-align: center !important;
+}
