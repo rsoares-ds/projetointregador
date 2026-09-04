@@ -74,7 +74,10 @@ Experimento do Disco de Newton na sala de aula
 }
 
 .disco-card {
-  text-align: center;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .disco-card .benefits {
@@ -187,7 +190,7 @@ Experimento do Disco de Newton na sala de aula
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    margin: 20px 0 !important;
+    margin: 15px 0 !important;
   }
 .imagem-centralizada img {
   dispaly: block !important;
