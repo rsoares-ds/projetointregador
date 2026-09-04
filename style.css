@@ -85,3 +85,33 @@ Experimento do Disco de Newton na sala de aula
 .disco-card .benefits li {
   margin-bottom: 8px;
 }
+
+.acessibilidade-card {
+  text-align: center;
+  color: #ffffff !important;
+}
+
+.acessibilidade-card h2,
+.acessibilidade-card h3,
+.acessibilidade-card p,
+.acessibilidade-card li {
+  color: #ffffff !important;
+}
+
+.acessibilidade-card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.acessibilidade-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.acessibilidade-card li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
